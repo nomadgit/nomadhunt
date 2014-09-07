@@ -1,0 +1,4 @@
+# http://kb.mailchimp.com/accounts/management/about-api-keys
+API_KEY: your-mailchimp-api-key 
+# http://kb.mailchimp.com/lists/managing-subscribers/find-your-list-id
+LIST_ID: your-nomadhunt-list-id
