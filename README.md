@@ -1,6 +1,6 @@
 # NomadHunt Script
 
-### [Subscribe to the NomadHunt List](http://eepurl.com/2HCjT)
+### [Subscribe to the NomadHunt List](http://eepurl.com/2HXJz)
 
 Rename .mailchimp.yml.example into .mailchimp.yml and add your own api_key and list_id.
 
