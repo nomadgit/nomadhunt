@@ -1,6 +1,6 @@
 # NomadHunt Script
 
-Subscribe to the [NomadHunt List](http://eepurl.com/2HCjT)
+### [Subscribe to the NomadHunt List](http://eepurl.com/2HCjT)
 
 Rename .mailchimp.yml.example into .mailchimp.yml and add your own api_key and list_id.
 
@@ -10,4 +10,4 @@ A text file contains the slug of already discovered cities.
 
 Logfile created under current directory.
 
-Powered by [NomadList](http://nomadlist.io)
+Powered by [NomadList](http://nomadlist.io) and authored by [@pbechu](http://twitter.com/pbechu).
