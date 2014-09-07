@@ -14,6 +14,7 @@ File.open("cities_already_discovered.txt", "a+") do |f|
 	cities_slug.each do |city|
 		if !cities_already_discovered.include?(city)
 			new_cities << city
+			f.puts city if cities_already_discovered.empty?
 		end
 	end
 
