@@ -2,5 +2,3 @@
 API_KEY: your-mailchimp-api-key 
 # http://kb.mailchimp.com/lists/managing-subscribers/find-your-list-id
 LIST_ID: your-nomadhunt-list-id
-# Where the script is located
-BASE_DIR: /path/to/main/directory
