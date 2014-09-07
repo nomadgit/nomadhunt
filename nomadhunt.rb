@@ -5,6 +5,7 @@ require 'yaml'
 require 'logger'
 
 logger = Logger.new('nomadhunt.log')
+logger.info("NomadHunt script launched")
 
 File.open("cities_already_discovered.txt", "a+") do |f|
 	cities_already_discovered = f.readlines.map { |c| c.strip }
@@ -79,6 +80,7 @@ File.open("cities_already_discovered.txt", "a+") do |f|
 			end
 		end
 	end
+	logger.info("NomadHunt script discovered #{new_cities.size} new cities")
 end
-
+logger.info("NomadHunt script finished")
 logger.close
