@@ -4,10 +4,10 @@ require 'mailchimp'
 require 'yaml'
 require 'logger'
 
-logger = Logger.new('nomadhunt.log')
+logger = Logger.new(File.join(__dir__, 'nomadhunt.log'))
 logger.info("NomadHunt script launched")
 
-File.open("cities_already_discovered.txt", "a+") do |f|
+File.open(File.join(__dir__, "cities_already_discovered.txt"), "a+") do |f|
 	cities_already_discovered = f.readlines.map { |c| c.strip }
 	cities = JSON.parse(open("http://nomadlist.io/api/v1").read)['cities']
 	cities_slug = cities.map { |city| city['slug'] }
@@ -25,7 +25,7 @@ File.open("cities_already_discovered.txt", "a+") do |f|
 			# Send a campaign to NomadHunt List
 			begin
 				# Load config
-				mailchimp_config = YAML.load_file('.mailchimp.yml')
+				mailchimp_config = YAML.load_file(File.join(__dir__, '.mailchimp.yml'))
 
 				# Retrieve list
 				mailchimp = Mailchimp::API.new(mailchimp_config["API_KEY"])
