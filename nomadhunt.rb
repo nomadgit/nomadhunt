@@ -9,7 +9,7 @@ logger.info("NomadHunt script launched")
 
 File.open(File.join(__dir__, "cities_already_discovered.txt"), "a+") do |f|
 	cities_already_discovered = f.readlines.map { |c| c.strip }
-	cities = JSON.parse(open("http://nomadlist.io/api/v1").read)['cities']
+	cities = JSON.parse(open("https://nomadlist.io/api/v1").read)['cities']
 	cities_slug = cities.map { |city| city['slug'] }
 	new_cities = []
 	cities_slug.each do |city|
